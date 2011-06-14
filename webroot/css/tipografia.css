@@ -86,8 +86,9 @@ a{
 
 .cinema{background-color: #d56100}
 
-#content #colunas li .destaque-lista #materias-lista li a{
+.musica{background-color: #b10f50}
 
+#content #colunas li .destaque-lista #materias-lista li a{
     color: #444444;
     font-weight: bold;
     font-size: 12px;
