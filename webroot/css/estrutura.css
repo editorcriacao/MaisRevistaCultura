@@ -130,3 +130,10 @@ root {
 }
 
 /* Destaque com imagen pequena */
+
+/*MATERIAS*/
+
+#largura_texto {
+    width: 650px;
+    border: 1px solid red;
+}
