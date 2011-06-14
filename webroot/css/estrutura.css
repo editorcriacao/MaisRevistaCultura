@@ -1,0 +1,132 @@
+/* 
+    Document   : estrutura
+    Created on : 13/06/2011, 09:28:20
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+/* header */
+
+#header{
+    background-image: url(../img/bg-topo.png);
+    width: 100%;
+    height: 153px;
+    border-bottom: 1px solid #888888;
+}
+
+#header-caixa{
+    margin: 0 auto;
+    width: 990px;
+    padding-top: 15px;
+}
+
+#header-caixa ul{
+    height: 105px;
+}
+
+#header-caixa ul li{
+    display: inline;
+    float: left;
+    margin-right: 10px;
+}
+
+.publicidade-top{
+    width: 728px;
+    height: 90px;
+    background-color: #ccc;
+}
+
+#header-caixa #menu{
+    clear: left;
+    height: 22px;
+    padding-top: 8px;
+    border-top: 1px solid #bbb;
+}
+
+#header-caixa #menu li{
+    height: 22px;
+}
+
+#header-caixa #menu li a{
+    height: 20px;
+    padding: 5px;
+    margin-right: 7px;
+}
+
+#header-caixa #menu li.espaco{
+    width: 50px;
+    height: 20px;
+}
+
+/* Content */
+#content #colunas{
+    width: 990px;
+    margin: 0 auto;
+    border-top: 2px solid #004c77;
+    position: relative;
+}
+
+#content #colunas li{
+    position: relative;
+    margin-top: 2%;
+    margin-left: 3px;
+    margin-right: 4px;
+    display: inline-block;
+    width: 318px;
+    height: 100%;
+}
+
+.destaque, .destaque-sem-img, .destaque-lista, .destaque-com-img{
+    border-bottom: 1px solid #999999;
+    margin-bottom: 10px;
+    position: relative;
+    display: block;
+    clear: left;
+
+}
+
+/* Destaque com imagem grande */
+
+.destaque .img{
+    display: block;
+    background-color: #ccc;
+    width: 318px;
+    height: 240px;
+    margin-bottom: 10px;
+}
+/* Destaque com imagem grande */
+
+
+/* destaque com lista */
+    
+/* destaque com lista */
+
+
+/* Destaque com imagen pequena */
+.destaque-com-img{
+    height: 130px;
+}
+
+.destaque-com-img #materia-img li .img-pequena{
+    display: inline-block;
+    background-color: #ccc;
+    width: 140px;
+    height: 110px;
+     
+}
+
+#materia-img li{
+    float: left;
+}
+
+/* Destaque com imagen pequena */
