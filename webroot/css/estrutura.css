@@ -77,7 +77,6 @@ root {
 }
 
 #content #colunas li{
-    position: relative;
     margin-top: 2%;
     margin-left: 3px;
     margin-right: 4px;
@@ -85,14 +84,16 @@ root {
     height: 100%;
 }
 
-.destaque, .destaque-sem-img, .destaque-lista, .destaque-com-img{
+.destaque, .destaque-sem-img, .destaque-lista, .destaque-com-img, .publicidade-botao{
     border-bottom: 1px solid #999999;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
     display: block;
     clear: left;
 
 }
+
+/* HOME */
 
 /* Destaque com imagem grande */
 
@@ -109,7 +110,7 @@ root {
 /* destaque com lista */
 #materias-lista li{
     display: block;
-    border: 1px solid red;
+    width: 200px;
 }
 /* destaque com lista */
 
@@ -124,7 +125,14 @@ root {
     background-color: #ccc;
     width: 140px;
     height: 110px;
-     
+
+}
+
+.destaque-com-img #materia-img li .img-pequena-2{
+    display: inline-block;
+    background-color: #ccc;
+    width: 90px;
+    height: 65px;
 }
 
 #materia-img li{
@@ -132,3 +140,49 @@ root {
 }
 
 /* Destaque com imagen pequena */
+
+
+/*publicidade botao*/
+.publicidade-botao span{
+    display: block;
+    background-color: #ccc;
+    width: 300px;
+    height: 90px;
+}
+
+/* img-dupla */
+#img-dupla{
+    display: block;
+    background-color: #ccc;
+    width: 315px;
+    height: 105px;
+
+}
+/* img-dupla */
+
+/* HOME */
+
+/* Search Box */
+#search-box{margin-top: 15px}
+
+#search-box li input[type=text]{
+    padding: 5px;
+    width: 200px;
+    border: 1px solid #cccccc;
+}
+
+.publicidade-square{
+    display: block;
+    background-color: #ccc;
+    width: 300px;
+    height: 250px;
+}
+
+
+.box-tracejado{
+    display: block;
+    background-image: url(../img/bg-traco.png);
+    width: 300px;
+    min-height: 300px;
+    padding: 25px 10px;
+}
