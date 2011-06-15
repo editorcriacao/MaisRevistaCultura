@@ -80,9 +80,10 @@
 
             <div id="content">
                 <ul id="colunas">
-                   <?php echo $content_for_layout?>
+    <?php echo $content_for_layout?>
 
-                    <li>
+
+                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 658px; top:15px;">
                         <div class="destaque">
                             <div class="img"></div>
                             <span class="editoria artes-plasticas">Artes Plásticas</span>
