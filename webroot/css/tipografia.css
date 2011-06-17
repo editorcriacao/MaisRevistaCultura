@@ -98,6 +98,8 @@ a{
 
 .padrao{background-color: #626262}
 
+.enquete{background-color: #1f9fba}
+
 #content #colunas li .destaque-lista #materias-lista li a{
     color: #444444;
     font-weight: bold;
@@ -109,7 +111,7 @@ a{
 .faca-login{
     background-color: #f2f2f2;
     border: 1px solid #d0d0d0;
-    padding: 5px;
+    padding: 4px;
     color: #444;
 }
 

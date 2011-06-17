@@ -166,7 +166,8 @@ root {
 #search-box{margin-top: 15px}
 
 #search-box li input[type=text]{
-    padding: 5px;
+    padding: 7px;
+    font-size: 16px;
     width: 200px;
     border: 1px solid #cccccc;
 }
@@ -183,6 +184,15 @@ root {
     display: block;
     background-image: url(../img/bg-traco.png);
     width: 300px;
-    min-height: 300px;
+    min-height: 190px;
     padding: 25px 10px;
+}
+
+#login-social li #icons{
+    margin-left: 5px;
+
+}
+
+#login-social li #icons li{  
+    margin-left: -5px;
 }

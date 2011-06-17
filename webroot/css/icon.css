@@ -1,0 +1,72 @@
+/* 
+    Document   : icon
+    Created on : 15/06/2011, 13:35:34
+    Author     : Administrador
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+
+.email{
+    background-image: url(../img/icon/mail.png);
+    display: block;
+    width: 26px;
+    height: 24px;
+}
+
+.email:hover{
+    background-image: url(../img/icon/mail-h.png);
+}
+
+.linkindin{
+    background-image: url(../img/icon/linkindin.png);
+    display: block;
+    width: 26px;
+    height: 24px;
+}
+
+.linkindin:hover{
+    background-image: url(../img/icon/linkindin-h.png);
+}
+
+.facebook{
+    background-image: url(../img/icon/facebook.png);
+    display: block;
+    width: 26px;
+    height: 24px;
+}
+
+.facebook:hover{
+    background-image: url(../img/icon/facebook-h.png);
+}
+
+.twitter{
+    background-image: url(../img/icon/twitter.png);
+    display: block;
+    width: 26px;
+    height: 24px;
+}
+
+.twitter:hover{
+    background-image: url(../img/icon/twitter-h.png);
+}
+
+.lupa{
+    background-image: url(../img/lupa_icon.png);
+    display: block;
+    width: 38px;
+    height: 35px;
+    border: 0;
+    position: relative;
+    top: -10px;
+    cursor: pointer;
+}
