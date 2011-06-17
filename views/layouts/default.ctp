@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Mais Revista Cultura</title>
+        <?php echo $this->Html->charset()?>
         <?php echo $this->Html->css(array('reset', 'estrutura', 'tipografia')) ?>
         <?php echo $this->Html->script(array('jquery')) ?>
     </head>
@@ -80,20 +81,33 @@
 
             <div id="content">
                 <ul id="colunas">
-    <?php echo $content_for_layout?>
 
+                    <?php echo $content_for_layout?>
 
-                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 658px; top:15px;">
-                        <div class="destaque">
-                            <div class="img"></div>
-                            <span class="editoria artes-plasticas">Artes Plásticas</span>
+                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 660px; top: 15px">
+                        <div id="box-right">
+                            <ul id="login-social">
+                                <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
+                                <li></li>
+                            </ul>
+                            <ul id="search-box">
+                                <?php echo $this->Form->create('Artigo', array('action'=>'busca'))?>
+                                <li><?php echo $this->Form->input('q', array('label'=>''))?></li>
+                                <li><?php echo $this->Form->submit()?></li>
+                                <?php echo $this->Form->end()?>
+                            </ul>
+                            <br />
+                            <p>Publicidade</p>
+                            <div class="publicidade-square">
+                                
+                            </div>
                             <br />
                             <br />
-                            <h1>Titulo da máteria</h1>
-                            <p>começo da máteria vem aqui e tem limite de caracteres</p>
-                            <br />
+                            <div class="box-tracejado">
+                                <span class="editoria padrao">DÊ SUA OPINIÃO</span>
+                            </div>
                         </div>
-                    </li<!-- Direita -->
+                    </li><!-- Direita -->
 
                 </ul>
             </div><!-- CONTENT -->

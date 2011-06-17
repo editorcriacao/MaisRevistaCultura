@@ -48,12 +48,47 @@
         nam qui ditiosae. Et aligentio molorem rem faccaborepel ellabo. Nequam, od
         qui quiaestrum haruption cum cusam ant faceatu sandam nientisci sanihiciis et
         est et eaquia veliquo blab ipsae vidi suntia aut fugitat iossimos vel iunt.</p>
-        
+
         <div id="linha-divisao"></div>
 
-    
-    
+        <ul id="compartilhar">
+            <li class="compartilhar">espaço para 'compartilhar'</li>
+            <li class="imprimir"> <a href="#"> <img src="img/icone_imprimir.gif" style="margin-bottom:-3px;"> </a></li>
+            <li class="enviar"> <a href="#"> <img src="img/icone_enviar.gif" style="margin-bottom:-3px;"> </a></li>
+            <li class="fonte"> FONTE <a href="#"><img src="img/icone-mais.png" style="margin-bottom:-3px;"></a> <a href="#"><img src="img/icone-menos.png" style="margin-bottom:-3px;"></a> </li>
+        </ul>
+
+        <div id="linha-divisao" style="margin-top: 8px;"></div>
+
+
+    <div id="faixa-listrada" style="margin-top: 30px; width: 650px; margin-bottom: -20px;"></div>
+    <div id="fundo-titulo" style="margin-left: 0;">COMENTÁRIOS</div>
+
+    <br />
+
+        <div id="comentarios">
+        <br />
+                    <h5><span><a href="#" style="color: #00547a; font-weight: bold" target="_blank"> Nome da pessoa</a></span> disse:</h5>
+            <p>Comentario da pessoa mais aqui...</p>
+        </div>
+
+        <br>
+        <div id="caixa-cinza" style="height: 95px; margin-left: 10px; margin-top: -10px;">
+            <h3 style="margin-left:5px;">Colocar a caixa de comentários aqui</h3>
+            <br />
+            <div id="colunas-formulario-2">
+
+
+
+        </div>
+
     </div>
+    <br>
+</div>
+
+
+
+
 
 </li>
 
