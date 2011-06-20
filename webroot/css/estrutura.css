@@ -145,6 +145,7 @@ root {
 /*MATERIAS*/
 
 #largura_texto {
+    margin-top: 5px !important;
     width: 652px;
     *float:left;
 }
@@ -223,7 +224,8 @@ root {
 #search-box{margin-top: 15px}
 
 #search-box li input[type=text]{
-    padding: 5px;
+    padding: 7px;
+    font-size: 16px;
     width: 200px;
     border: 1px solid #cccccc;
 }
@@ -240,7 +242,7 @@ root {
     display: block;
     background-image: url(../img/bg-traco.png);
     width: 300px;
-    min-height: 300px;
+    min-height: 190px;
     padding: 25px 10px;
 }
 
@@ -292,4 +294,148 @@ root {
 
 #compartilhar li {
     *float: left;
+}
+
+#login-social li #icons{
+    margin-left: 5px;
+
+}
+
+#login-social li #icons li{  
+    margin-left: -5px;
+}
+
+
+/* ---CONTATO--- */
+
+#colunas-formulario {
+    margin-bottom: 8px;
+}
+
+#colunas-formulario input[type=text]{
+    border: 1px solid #666;
+    padding: 4px;
+    color: #888;
+    font-family: arial;
+    margin-bottom: 8px;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+
+#colunas-formulario select {
+    border: 1px solid #666;
+    padding: 4px;
+    color: #888;
+    font-family: arial;
+    margin-bottom: 8px;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+
+#colunas-formulario textarea {
+    border: 1px solid #666;
+    padding: 4px;
+    color: #888;
+    font-family: arial;
+    width: 340px;
+    height: 130px;
+    *width: 320px;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+
+#colunas-formulario input[type=submit]{
+    margin-top: 15px;
+    background-image: url(../img/bg-button.png);
+    border: 1px solid #888;
+    height: 30px;
+    padding: 4px;
+    cursor: pointer;
+    margin-bottom: 8px;
+    padding: 4px 15px\9;
+    margin-right: 75px\9 !important;
+    *padding: 4px;
+    *position:absolute;
+    *top:493px;
+    *margin-left:47px;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+
+}
+
+#alertBAD span:hover{
+    background-color: #cf3c1c;
+}
+
+#alertBAD{
+    padding: 30px 15px;
+    font-family: arial;
+    font-size: 14px;
+    color: #000;
+    line-height: 120%;
+    text-align: center;
+}
+
+#colunas-formulario input[type=submit]:hover{
+    background-image: url(../img/bg-button-hover.png);
+}
+
+#contato {
+    margin-top: 15px;
+    *margin-top: 30px;
+}
+
+
+#coluna-um {
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #444;
+}
+
+#telefone-vagas li {
+    float: left;
+    display: block;
+}
+
+
+/*CADASTRO*/
+
+#cadastro input[type=submit]:hover{
+    background-image: url(../img/bg-button-hover.png);
+
+}
+
+#cadastro .input{
+    padding: 8px;
+}
+
+#cadastro input[type=submit]{
+    margin-top: 15px;
+    background-image: url(../img/bg-button.png);
+    border: 1px solid #9d9c9c;
+    height: 30px;
+    padding: 5px;
+    cursor: pointer;
+
+    border-radius:4px;
+    -moz-border-radius:4px;
+    -webkit-border-radius:4px;
+}
+
+#cadastro label {
+
+    font-family: arial;
+    font-size: 14px;
 }

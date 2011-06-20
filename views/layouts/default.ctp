@@ -3,7 +3,7 @@
     <head>
         <title>Mais Revista Cultura</title>
         <?php echo $this->Html->charset()?>
-        <?php echo $this->Html->css(array('reset', 'estrutura', 'tipografia')) ?>
+        <?php echo $this->Html->css(array('reset', 'estrutura', 'tipografia', 'icon')) ?>
         <?php echo $this->Html->script(array('jquery')) ?>
     </head>
     <body>
@@ -88,12 +88,19 @@
                         <div id="box-right">
                             <ul id="login-social">
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
-                                <li></li>
+                                <li>
+                                    <ul id="icons">
+                                        <li><a href="" title="Entre em contato"><span class="email"></span></a></li>
+                                        <li><a href="" title="Linkedin"><span class="linkindin"></span></a></li>
+                                        <li><a href="" title="Facebook"><span class="facebook"></span></a></li>
+                                        <li><a href="" title="Twitter"><span class="twitter"></span></a></li>
+                                    </ul>
+                                </li>
                             </ul>
                             <ul id="search-box">
                                 <?php echo $this->Form->create('Artigo', array('action'=>'busca'))?>
                                 <li><?php echo $this->Form->input('q', array('label'=>''))?></li>
-                                <li><?php echo $this->Form->submit()?></li>
+                                <li><?php echo $this->Form->submit(' ', array('class'=>'lupa'))?></li>
                                 <?php echo $this->Form->end()?>
                             </ul>
                             <br />
@@ -105,7 +112,24 @@
                             <br />
                             <div class="box-tracejado">
                                 <span class="editoria padrao">DÊ SUA OPINIÃO</span>
+                                <br />
+                                <br />
+                                <span class="editoria enquete">ENQUETE</span>
+                                <br />
+                                <br />
+                                <h3>O titulo da materia vem aki?</h3>
+                                <p>+ Votar</p>
+                                <p>+ Ver Resultado</p>
                             </div>
+                        </div>
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <div class="publicidade-botao">
+                            <p>Publicidade</p>
+                            <span></span>
+                            <br />
                         </div>
                     </li><!-- Direita -->
 
