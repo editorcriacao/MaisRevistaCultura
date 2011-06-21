@@ -109,6 +109,26 @@
                                 
                             </div>
                             <br />
+                            <div class="box-tracejado">
+                                <span class="editoria galeria">GALERIA DE FOTOS</span>
+                                <br />
+                                <br />
+                                <span class="link"><a href="">> MAIS GALERIAS</a></span>
+                            </div>
+                            <br />
+                            <span class="destaque"></span>
+                            <br />
+                            <span class="editoria destaque-cor">DESTAQUES</span>
+                            <br />
+                            <ul id="materias-lista" >
+                                <?php $destaquesLista = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaquesLista')) ?>
+                                <?php foreach($destaquesLista as $d){?>
+                                <li><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $d['Artigo']['id'], Inflector::slug($d['Artigo']['titulo'])))?>"><?php echo $this->Html->image('disc.png', array('style' => 'margin-right: 4px;')) ?> <?php echo $d['Artigo']['titulo']?></a></li>
+                                <?php } ?>
+                            </ul>
+                            <br />
+                            <br />
+                             <span class="destaque"></span>
                             <br />
                             <div class="box-tracejado">
                                 <span class="editoria padrao">DÊ SUA OPINIÃO</span>
@@ -137,5 +157,7 @@
             </div><!-- CONTENT -->
 
         </div>
+        <br />
+        <br />
     </body>
 </html>

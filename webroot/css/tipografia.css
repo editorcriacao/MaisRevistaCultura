@@ -107,6 +107,10 @@ a:hover{
 
 .enquete{background-color: #1f9fba}
 
+.galeria{background-color: #f0ab00;}
+
+.destaque-cor{background-color: #38302b;}
+
 #content #colunas li .destaque-lista #materias-lista li a{
     color: #444444;
     font-weight: bold;
@@ -195,6 +199,18 @@ a:hover{
     right: -10px;
 }
 
+.box-tracejado span.link{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    font-family: arial;
+    font-size: 10px;
+    font-weight: bold;
+    color: #626262;
+
+}
+
+/* Comentarios */
 
 
 #comentarios h5{

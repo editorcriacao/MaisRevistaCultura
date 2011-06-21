@@ -110,7 +110,7 @@ root {
 /* destaque com lista */
 #materias-lista li{
     display: block;
-    width: 200px;
+    width: 300px;
 }
 /* destaque com lista */
 
@@ -240,8 +240,9 @@ root {
 
 .box-tracejado{
     display: block;
+    position: relative;
     background-image: url(../img/bg-traco.png);
-    width: 300px;
+    width: 280px;
     min-height: 190px;
     padding: 25px 10px;
 }
