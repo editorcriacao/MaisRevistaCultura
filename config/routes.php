@@ -27,6 +27,12 @@
  * to use (in this case, /app/views/pages/home.ctp)...
  */
 	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
+        Router::connect('/revista-digital', array('controller' => 'pages', 'action' => 'display', 'revista-digital'));
+        Router::connect('/cadastro', array('controller' => 'pages', 'action' => 'display', 'cadastro'));
+        Router::connect('/contato', array('controller' => 'pages', 'action' => 'display', 'contato'));
+        Router::connect('/artigo', array('controller' => 'pages', 'action' => 'display', 'artigo'));
+
+
 /**
  * ...and connect the rest of 'Pages' controller's urls.
  */

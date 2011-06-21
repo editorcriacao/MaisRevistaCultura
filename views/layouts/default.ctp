@@ -81,6 +81,7 @@
 
             <div id="content">
                 <ul id="colunas">
+
                     <?php echo $content_for_layout?>
 
                     <li style="width: 300px; margin-left: 13px; position: absolute; left: 660px; top: 15px">
@@ -99,7 +100,7 @@
                             <ul id="search-box">
                                 <?php echo $this->Form->create('Artigo', array('action'=>'busca'))?>
                                 <li><?php echo $this->Form->input('q', array('label'=>''))?></li>
-                                <li><?php echo $this->Form->submit('', array('class'=>'lupa'))?></li>
+                                <li><?php echo $this->Form->submit(' ', array('class'=>'lupa'))?></li>
                                 <?php echo $this->Form->end()?>
                             </ul>
                             <br />

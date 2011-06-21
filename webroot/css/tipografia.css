@@ -113,6 +113,73 @@ a:hover{
     font-size: 12px;
 }
 
+/*materias*/
+
+#nome-secao {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 10px;
+    color: #666666;
+}
+
+#materia h1 {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 28px;
+    color: #006059;
+    margin-top: 25px;
+}
+
+#materia h2{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 20px;
+    color: #666;
+    margin-top: 5px;
+}
+
+#materia h3{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 12px;
+    margin-top: 20px;
+
+}
+
+#materia h4{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: #444;
+    background-color: #eee;
+    width: 640px;
+    height: 10px;
+    padding: 5px;
+}
+
+#materia h5{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: #999;
+    margin-top: 10px;
+}
+
+#materia p {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #000000;
+    line-height: 140%;
+    margin-bottom: 10px;
+    width: 648px;
+}
+
+
+#compartilhar {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 11px;
+    color: #666;
+    margin-top: -30px !important;
+}
+
+
 
 /* Login, redes sociais e busca */
 .faca-login{
@@ -126,4 +193,120 @@ a:hover{
     position: relative;
     top: 11px;
     right: -10px;
+}
+
+
+
+#comentarios h5{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 16px;
+    margin-bottom: 4px;
+    margin-top: 1px;
+}
+
+#comentarios p {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 125%;
+    margin-top: 5px;
+}
+
+/*revista digital*/
+
+#caixa-h1{
+    font-family: arial;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+#box-revista li p{
+    font-size: 13px;
+    color: #666;
+    padding: 4px;
+}
+
+#box-revista li h2{
+    color: #333;
+    font-family: arial;
+    font-size: 20px;
+    margin: 4px;
+}
+
+#box-revista li a{
+    padding: 9px;
+    font-size: 12px;
+    margin-right: 7px;
+    background-image: url(../img/bg-botao.png);
+    border: 1px solid #969696;
+    color: #333;
+
+    border-radius:6px;
+    -moz-border-radius:6px;
+    -webkit-border-radius:6px;
+}
+
+#box-revista li a:hover{
+    background-image: url(../img/bg-botao-hover.png);
+}
+
+#box-revista li span.caixa-alta-link{
+    font-size: 16px;
+}
+
+#box-revista li a:hover{
+    text-decoration: none;
+}
+
+
+#box-revista li a:hover{
+    text-decoration: none;
+}
+
+/*CONTATO*/
+
+#contato p {
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 125%;
+    margin-bottom: 10px;
+}
+
+#colunas-formulario label{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #000;
+    padding: 3px;
+    margin-right:5px;
+}
+
+#coluna-um label{
+    *position: absolute;
+    *margin-top: 0;
+}
+
+#coluna-um input{
+    *margin-left: 75px;
+}
+
+#coluna-dois textarea {
+    *position: absolute;
+    *top: 350px;
+    *margin-left: -210px;
+}
+
+label{
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 14px;
+    color: #333;
+    padding: 3px;
+}
+
+.newsletter{
+    font-family: arial;
+    font-size: 14px;
+    color: #333;
+    padding: 3px;
 }
