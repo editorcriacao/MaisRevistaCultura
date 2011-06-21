@@ -23,13 +23,13 @@ h1{
 
 h2{
     font-family: arial;
-    font-size: 26px;
+    font-size: 22px;
     color: #444444;
 }
 
 h3{
     font-family: arial;
-    font-size: 22px;
+    font-size: 20px;
     color: #444444;
 }
 
@@ -56,6 +56,11 @@ b{}
 a{
     font-family: arial;
     text-decoration: none;
+    color: inherit;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 
@@ -95,6 +100,8 @@ a{
 .cinema{background-color: #d56100}
 
 .musica{background-color: #b10f50}
+
+.teatro-danca{background-color: #790e11}
 
 .padrao{background-color: #626262}
 

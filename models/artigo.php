@@ -1,5 +1,6 @@
 <?php
-Class Artigo extends AppModela{
+Class Artigo extends AppModel{
     var $name = 'Artigo';
 
+    var $belongsTo = array('Editoria');
 }

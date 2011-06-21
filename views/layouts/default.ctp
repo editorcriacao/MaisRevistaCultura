@@ -68,8 +68,8 @@
                         <li><a href="">Teatro & Dança</a>|</li>
                         <li><a href="">Artes Plásticas</a>|</li>
                         <li><a href="">Música</a>|</li>
+                        <li><a href="">Livros</a>|</li>
                         <li><a href="">Filosofia</a></li>
-                        <li class="espaco"></li>
                         <li class="espaco"></li>
                         <li class="espaco"></li>
                         <li class="segundo-menu"><a href="">Cadastro</a>|</li>
