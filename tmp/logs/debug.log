@@ -1,5 +1,11 @@
 2011-06-10 15:03:43 Debug: Notice (1024): Please change the value of 'Security.salt' in app/config/core.php to a salt value specific to your application in [C:\Arquivos de programas\VertrigoServ\www\MaisRevistaCultura\cake\libs\debugger.php, line 684]
 2011-06-10 15:03:43 Debug: Notice (1024): Please change the value of 'Security.cipherSeed' in app/config/core.php to a numeric (digits only) seed value specific to your application in [C:\Arquivos de programas\VertrigoServ\www\MaisRevistaCultura\cake\libs\debugger.php, line 688]
+<<<<<<< HEAD
+2011-06-20 16:14:04 Debug: Notice (8): Undefined variable: A arte de fotografar pessoas e ruas   in [C:\Arquivos de programas\VertrigoServ\www\MaisRevistaCultura\app\views\pages\home.ctp, line 56]
+2011-06-20 16:15:18 Debug: Notice (8): Undefined variable: A arte de fotografar pessoas e ruas   in [C:\Arquivos de programas\VertrigoServ\www\MaisRevistaCultura\app\views\pages\home.ctp, line 56]
+2011-06-20 16:47:03 Debug: Notice (8): Array to string conversion in [C:\Arquivos de programas\VertrigoServ\www\MaisRevistaCultura\cake\libs\model\datasources\dbo_source.php, line 2373]
+2011-06-21 09:12:32 Debug: Notice (8): Undefined index:  sutTitulo in [C:\Arquivos de programas\VertrigoServ\www\MaisRevistaCultura\app\views\pages\home.ctp, line 9]
+=======
 2011-06-15 11:06:14 Debug: Notice (8): Undefined variable: artigo in [C:\Documents and Settings\Amanda\Desktop\VertrigoServ\www\MaisRevistaCultura\app\views\pages\artigo.ctp, line 86]
 2011-06-15 11:07:35 Debug: Notice (8): Undefined variable: artigo in [C:\Documents and Settings\Amanda\Desktop\VertrigoServ\www\MaisRevistaCultura\app\views\pages\artigo.ctp, line 86]
 2011-06-15 11:07:49 Debug: Notice (8): Undefined variable: artigo in [C:\Documents and Settings\Amanda\Desktop\VertrigoServ\www\MaisRevistaCultura\app\views\pages\artigo.ctp, line 85]
@@ -37,3 +43,4 @@
 2011-06-15 11:15:06 Debug: Notice (8): Undefined variable: artigo in [C:\Documents and Settings\Amanda\Desktop\VertrigoServ\www\MaisRevistaCultura\app\views\pages\artigo.ctp, line 85]
 2011-06-15 11:15:10 Debug: Notice (8): Undefined variable: artigo in [C:\Documents and Settings\Amanda\Desktop\VertrigoServ\www\MaisRevistaCultura\app\views\pages\artigo.ctp, line 85]
 2011-06-15 11:15:11 Debug: Notice (8): Undefined variable: artigo in [C:\Documents and Settings\Amanda\Desktop\VertrigoServ\www\MaisRevistaCultura\app\views\pages\artigo.ctp, line 85]
+>>>>>>> e99ff446613d8cb14d24d7fbb4697477847e8d31

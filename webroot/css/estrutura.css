@@ -44,6 +44,7 @@ root {
     width: 728px;
     height: 90px;
     background-color: #ccc;
+
 }
 
 #header-caixa #menu{
@@ -51,6 +52,8 @@ root {
     height: 22px;
     padding-top: 8px;
     border-top: 1px solid #bbb;
+    width: 990px;
+        margin: 0 auto;
 }
 
 #header-caixa #menu li{
@@ -64,7 +67,7 @@ root {
 }
 
 #header-caixa #menu li.espaco{
-    width: 50px;
+    width: 53px;
     height: 20px;
 }
 
@@ -221,13 +224,28 @@ root {
 /* HOME */
 
 /* Search Box */
-#search-box{margin-top: 15px}
+#search-box{
+    margin-top: 12px
+}
+
+#search-box li submit {
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+
+}
 
 #search-box li input[type=text]{
-    padding: 7px;
+    padding: 5px;
     font-size: 16px;
-    width: 200px;
-    border: 1px solid #cccccc;
+    width: 210px;
+    border: 1px solid #ccc;
+    margin-left: -5px !important;
+    margin-right: 2px !important;
+
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
 }
 
 .publicidade-square{
@@ -297,12 +315,13 @@ root {
 }
 
 #login-social li #icons{
-    margin-left: 5px;
-
+    margin-left: 6px;
 }
 
 #login-social li #icons li{  
     margin-left: -5px;
+    margin-bottom: -5px;
+    margin-top: -10px\9 !important;
 }
 
 

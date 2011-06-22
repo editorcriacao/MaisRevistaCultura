@@ -68,13 +68,13 @@
                         <li><a href="">Teatro & Dança</a>|</li>
                         <li><a href="">Artes Plásticas</a>|</li>
                         <li><a href="">Música</a>|</li>
+                        <li><a href="">Livros</a>|</li>
                         <li><a href="">Filosofia</a></li>
                         <li class="espaco"></li>
                         <li class="espaco"></li>
-                        <li class="espaco"></li>
-                        <li class="segundo-menu"><a href="">Cadastro</a>|</li>
+                        <li class="segundo-menu" style="margin-left: 10px !important;"><a href="">Cadastro</a>|</li>
                         <li class="segundo-menu"><a href="">Loja Virtual</a>|</li>
-                        <li class="segundo-menu"><a href="">Contato</a></li>
+                        <li class="segundo-menu" style="padding-right: 0 !important;"><a href="" style="padding-right: 0 !important; margin-right: 0 !important;">Contato</a></li>
                     </ul>
                 </div>
             </div><!-- HEADER -->
@@ -84,13 +84,13 @@
 
                     <?php echo $content_for_layout?>
 
-                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 660px; top: 15px">
+                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 660px; top: 10px">
                         <div id="box-right">
                             <ul id="login-social">
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
                                 <li>
                                     <ul id="icons">
-                                        <li><a href="" title="Entre em contato"><span class="email"></span></a></li>
+                                        <li><a href="" title="Entre em contato"><span class="email" style="margin-left: 8px;"></span></a></li>
                                         <li><a href="" title="Linkedin"><span class="linkindin"></span></a></li>
                                         <li><a href="" title="Facebook"><span class="facebook"></span></a></li>
                                         <li><a href="" title="Twitter"><span class="twitter"></span></a></li>
