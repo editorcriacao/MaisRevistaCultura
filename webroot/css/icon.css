@@ -63,10 +63,20 @@ root {
 .lupa{
     background-image: url(../img/lupa_icon.png);
     display: block;
-    width: 38px;
-    height: 35px;
+    width: 35px;
+    height: 34px;
     border: 0;
     position: relative;
-    top: -2px;
+    top: -1px;
+    top:1px\9;
+
     cursor: pointer;
+}
+
+.lupa, x:-moz-any-link, x:default {
+    top: 11px;
+}
+
+.lupa:hover{
+    background-image: url(../img/lupa_icon-h.png);
 }

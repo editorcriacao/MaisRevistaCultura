@@ -12,7 +12,7 @@
                 <div id="header-caixa">
                     <ul>
                         <li>
-                            <?php echo $this->Html->image('logo.png') ?>
+                            <span style="margin-left: 2px;"><?php echo $this->Html->image('logo.png') ?></span>
                             <p class="data"><?php
                             $dia = date('d');
                             $mes = date('n');
@@ -63,7 +63,7 @@
                     </ul>
 
                     <ul id="menu">
-                        <li><a href="">Destaques</a>|</li>
+                        <li style="margin-left: 3px;"><a href="">Destaques</a>|</li>
                         <li><a href="">Cinema</a>|</li>
                         <li><a href="">Teatro & Dança</a>|</li>
                         <li><a href="">Artes Plásticas</a>|</li>
@@ -72,7 +72,7 @@
                         <li><a href="">Filosofia</a></li>
                         <li class="espaco"></li>
                         <li class="espaco"></li>
-                        <li class="segundo-menu" style="margin-left: 10px !important;"><a href="">Cadastro</a>|</li>
+                        <li class="segundo-menu" style="margin-left: 16px !important;"><a href="">Cadastro</a>|</li>
                         <li class="segundo-menu"><a href="">Loja Virtual</a>|</li>
                         <li class="segundo-menu" style="padding-right: 0 !important;"><a href="" style="padding-right: 0 !important; margin-right: 0 !important;">Contato</a></li>
                     </ul>
@@ -84,7 +84,7 @@
 
                     <?php echo $content_for_layout?>
 
-                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 660px; top: 10px">
+                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 660px; top: 0;">
                         <div id="box-right">
                             <ul id="login-social">
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
@@ -97,7 +97,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <ul id="search-box">
+                            <ul id="search-box" style="border: 1px solid white;">
                                 <?php echo $this->Form->create('Artigo', array('action'=>'busca'))?>
                                 <li><?php echo $this->Form->input('q', array('label'=>''))?></li>
                                 <li><?php echo $this->Form->submit(' ', array('class'=>'lupa'))?></li>
@@ -109,8 +109,27 @@
                                 
                             </div>
                             <br />
-                            <br />
                             <div class="box-tracejado">
+                                <span class="editoria galeria">GALERIA DE FOTOS</span>
+                                <br />
+                                <br />
+                                <span class="link"><a href="">> MAIS GALERIAS</a></span>
+                            </div>
+                            <br />
+                            <span class="destaque"></span>
+                            <span class="editoria destaque-cor">DESTAQUES</span>
+                            <br />
+                            <ul id="materias-lista" >
+                                <?php $destaquesLista = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaquesLista')) ?>
+                                <?php foreach($destaquesLista as $d){?>
+                                <li><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $d['Artigo']['id'], Inflector::slug($d['Artigo']['titulo'])))?>"><?php echo $this->Html->image('disc.png', array('style' => 'margin-right: 4px;')) ?> <?php echo $d['Artigo']['titulo']?></a></li>
+                                <?php } ?>
+                            </ul>
+                            <br />
+                            <br>
+                             <span class="destaque"></span>
+                            
+                            <div class="box-tracejado" style="padding-bottom:-50px !important;">
                                 <span class="editoria padrao">DÊ SUA OPINIÃO</span>
                                 <br />
                                 <br />
@@ -118,14 +137,13 @@
                                 <br />
                                 <br />
                                 <h3>O titulo da materia vem aki?</h3>
-                                <p>+ Votar</p>
-                                <p>+ Ver Resultado</p>
+                                <p style="margin-top:11px;"><a href="">+ Votar</a></p>
+                                <p style="margin-top:5px;"><a href="">+ Ver Resultado</a></p>
                             </div>
                         </div>
+                     
                         <br />
-                        <br />
-                        <br />
-                        <br />
+                        
                         <div class="publicidade-botao">
                             <p>Publicidade</p>
                             <span></span>
@@ -137,5 +155,7 @@
             </div><!-- CONTENT -->
 
         </div>
+        <br />
+        <br />
     </body>
 </html>

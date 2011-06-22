@@ -53,7 +53,7 @@ root {
     padding-top: 8px;
     border-top: 1px solid #bbb;
     width: 990px;
-        margin: 0 auto;
+    margin: 0 auto;
 }
 
 #header-caixa #menu li{
@@ -88,7 +88,7 @@ root {
 }
 
 .destaque, .destaque-sem-img, .destaque-lista, .destaque-com-img, .publicidade-botao{
-    border-bottom: 1px solid #999999;
+    border-bottom: 2px solid #999;
     margin-bottom: 20px;
     position: relative;
     display: block;
@@ -113,7 +113,7 @@ root {
 /* destaque com lista */
 #materias-lista li{
     display: block;
-    width: 200px;
+    width: 300px;
 }
 /* destaque com lista */
 
@@ -225,27 +225,32 @@ root {
 
 /* Search Box */
 #search-box{
-    margin-top: 12px
+    margin-top: -20px;
+    margin-top: -25px\9;
 }
 
-#search-box li submit {
-    border-radius:5px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-
+#search-box, x:-moz-any-link, x:default{
+    margin-top: -25px;
 }
+
 
 #search-box li input[type=text]{
-    padding: 5px;
+    padding: 3px 5px;
     font-size: 16px;
-    width: 210px;
+    width: 236px;
+    height: 24px;
     border: 1px solid #ccc;
-    margin-left: -5px !important;
-    margin-right: 2px !important;
+    margin-left: -7px !important;
+    margin-right: -4px !important;
+    top: -3px\9;
 
     border-radius:5px;
     -moz-border-radius:5px;
     -webkit-border-radius:5px;
+}
+
+#search-box li input[type=text], x:-moz-any-link, x:default{
+    width: 238px;
 }
 
 .publicidade-square{
@@ -258,10 +263,12 @@ root {
 
 .box-tracejado{
     display: block;
+    position: relative;
     background-image: url(../img/bg-traco.png);
-    width: 300px;
-    min-height: 190px;
-    padding: 25px 10px;
+    width: 280px;
+    min-height: 120px;
+    padding: 15px 10px;
+
 }
 
 
@@ -321,8 +328,18 @@ root {
 #login-social li #icons li{  
     margin-left: -5px;
     margin-bottom: -5px;
-    margin-top: -10px\9 !important;
+    position: relative;
+    
 }
+
+#icons li {
+    border: 1px solid white;
+    top: -29px;
+    top: -39px\9;
+    left: 173px;
+}
+
+
 
 
 /* ---CONTATO--- */
