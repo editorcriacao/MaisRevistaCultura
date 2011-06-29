@@ -1,4 +1,4 @@
-                  <li style="width: 320px; min-height: 1200px; position: absolute; top: 15px">
+                  <li style="width: 320px; min-height: 1200px; top: 15px">
                        <?php $destaque = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaque'))?>
                          <div class="destaque">
                             <div class="img"></div>
@@ -66,11 +66,13 @@
 
                         <div class="destaque-com-img" style="min-height: 180px;">
                             <span class="editoria teatro-danca">Teatro & Dança</span>
-                            <ul id="materia-img" style="margin-top: 5px;">
+                            <ul id="materia-img" style="margin-top: 10px;">
                               <?php $mostrarTeatroDanca = $this->requestAction(array('controller'=>'artigos', 'action'=>'mostrarTeatroDanca')) ?>
                                 <?php foreach($mostrarTeatroDanca as $t){?>
-                                <li style="width: 100px; display: inline-block; height: 65px; margin-left: -1px;"><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $t['Artigo']['id'], Inflector::slug($t['Artigo']['titulo'])))?>"><?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/img/fotos_artigos/'.$t['Artigo']['foto'], array('width'=>90))?></a></li>
-                                <li style="width: 200px; display: inline-block; height: 65px; margin-left: -1px;">
+                                <li style="width: 100px; display: inline-block; height: 65px; margin-left: 0;">
+                                    <a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $t['Artigo']['id'], Inflector::slug($t['Artigo']['titulo'])))?>"><?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/img/fotos_artigos/'.$t['Artigo']['foto'], array('width'=>90))?></a>
+                                </li>
+                                <li style="width: 200px; display: inline-block; height: 65px; margin-left: 0;">
                                     <h4><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $t['Artigo']['id'], Inflector::slug($t['Artigo']['titulo'])))?>"><?php echo $t['Artigo']['titulo']?></a></h4>
                                 </li>
                                 <?php } ?>
@@ -82,7 +84,7 @@
                     </li> <!-- Esquerda -->
 
 
-                    <li  style="width: 320px; min-height: 1200px; margin-left: 12px; position: absolute; left: 322px;top: 15px">
+                    <li  style="width: 320px; min-height: 1200px; margin-left: 12px;">
                         <?php $destaqueSemFoto = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaqueSemFoto'))?>
 
                         <div class="destaque-sem-img">

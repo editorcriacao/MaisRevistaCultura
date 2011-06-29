@@ -88,14 +88,14 @@
                     <?php echo $content_for_layout?>
 
 
-                    <li style="width: 300px; margin-left: 690px; margin-top: -7px; float:left;">
+                    <li style="width: 300px; margin-left: 0; top:0; margin-top: -7px; ">
 
                         <div id="box-right">
                             <ul id="login-social">
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
                                 <li>
                                     <ul id="icons">
-                                        <li><a href="" title="Entre em contato"><span class="email" style="margin-left: 8px;"></span></a></li>
+                                        <li><a href="" title="Entre em contato"><span class="email" style="margin-left: 5px;"></span></a></li>
                                         <li><a href="" title="Linkedin"><span class="linkindin"></span></a></li>
                                         <li><a href="" title="Facebook"><span class="facebook"></span></a></li>
                                         <li><a href="" title="Twitter"><span class="twitter"></span></a></li>
