@@ -88,8 +88,7 @@
                     <?php echo $content_for_layout?>
 
 
-
-                    <li style="width: 300px; margin-left: 0px; margin-top: -7px; top: 0px">
+                    <li style="width: 300px; position: absolute; top: 0; left: 680px;">
 
                         <div id="box-right">
                             <ul id="login-social">

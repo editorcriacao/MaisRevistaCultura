@@ -1,4 +1,4 @@
-<li id="largura_texto" style="float:left;">
+<li id="largura_texto" >
     <div id="nome-secao">
         MATÉRIAS > <span style="font-weight:bold; text-transform: uppercase"><?php echo $artigo['Editoria']['nomeEditoria']?></span>
     </div>
