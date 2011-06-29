@@ -281,8 +281,6 @@ root {
     position: relative;
     top: -11px;
     z-index: -400;
-    min-height: 120px;
-    padding: 15px 10px;
 
 }
 

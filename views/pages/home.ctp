@@ -1,4 +1,4 @@
-                  <li style="width: 320px; min-height: 1200px; position: absolute; top: 15px">
+                  <li style="width: 320px; min-height: 1200px; position: relative; top: -260px;">
                        <?php $destaque = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaque'))?>
                          <div class="destaque">
                             <div class="img"></div>
@@ -82,7 +82,7 @@
                     </li> <!-- Esquerda -->
 
 
-                    <li  style="width: 320px; min-height: 1200px; margin-left: 12px; position: absolute; left: 322px;top: 15px">
+                    <li  style="width: 320px; min-height: 1200px; margin-left: 12px; position: relative; top: -42px">
                         <?php $destaqueSemFoto = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaqueSemFoto'))?>
 
                         <div class="destaque-sem-img">
