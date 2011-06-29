@@ -88,6 +88,7 @@
                     <?php echo $content_for_layout?>
 
 
+
                     <li style="width: 300px; margin-left: 0px; margin-top: -7px; top: 0px">
 
                         <div id="box-right">
@@ -95,7 +96,7 @@
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
                                 <li>
                                     <ul id="icons">
-                                        <li><a href="" title="Entre em contato"><span class="email" style="margin-left: 8px;"></span></a></li>
+                                        <li><a href="" title="Entre em contato"><span class="email" style="margin-left: 5px;"></span></a></li>
                                         <li><a href="" title="Linkedin"><span class="linkindin"></span></a></li>
                                         <li><a href="" title="Facebook"><span class="facebook"></span></a></li>
                                         <li><a href="" title="Twitter"><span class="twitter"></span></a></li>
