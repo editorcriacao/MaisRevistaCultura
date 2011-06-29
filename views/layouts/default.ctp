@@ -1,7 +1,7 @@
 <?php echo $this->Html->doctype() ?>
 <html>
     <head>
-        <title>Mais Revista Cultura</title>
+        <title>Mais Revista Cultura - <?php echo $title_for_layout?></title>
         <?php echo $this->Html->charset()?>
         <?php echo $this->Html->css(array('reset', 'estrutura', 'tipografia', 'icon')) ?>
         <?php echo $this->Html->script(array('jquery')) ?>
@@ -12,7 +12,8 @@
                 <div id="header-caixa">
                     <ul>
                         <li>
-                            <span style="margin-left: 2px;"><?php echo $this->Html->image('logo.png') ?></span>
+                            <a href="<?php echo $this->Html->url('/')?>"><?php echo $this->Html->image('logo.png') ?></a>
+
                             <p class="data"><?php
                             $dia = date('d');
                             $mes = date('n');
@@ -63,13 +64,15 @@
                     </ul>
 
                     <ul id="menu">
-                        <li style="margin-left: 3px;"><a href="">Destaques</a>|</li>
-                        <li><a href="">Cinema</a>|</li>
-                        <li><a href="">Teatro & Dança</a>|</li>
-                        <li><a href="">Artes Plásticas</a>|</li>
-                        <li><a href="">Música</a>|</li>
-                        <li><a href="">Livros</a>|</li>
-                        <li><a href="">Filosofia</a></li>
+
+                        <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 39, 'destaques'))?>">Destaques</a>|</li>
+                        <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 40, 'cinema'))?>">Cinema</a>|</li>
+                        <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 41, 'teatro-danca'))?>">Teatro & Dança</a>|</li>
+                        <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 42, 'artes-plasticas'))?>">Artes Plásticas</a>|</li>
+                        <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 45, 'musica'))?>">Música</a>|</li>
+                        <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 47, 'livros'))?>">Livros</a>|</li>
+                        <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 46, 'filosofia'))?>">Filosofia</a></li>
+
                         <li class="espaco"></li>
                         <li class="espaco"></li>
                         <li class="segundo-menu" style="margin-left: 16px !important;"><a href="">Cadastro</a>|</li>
@@ -84,7 +87,9 @@
 
                     <?php echo $content_for_layout?>
 
-                    <li style="width: 300px; margin-left: 13px; position: absolute; left: 660px; top: 0;">
+
+                    <li style="width: 300px; margin-left: 690px; margin-top: -7px; float:left;">
+
                         <div id="box-right">
                             <ul id="login-social">
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
@@ -118,6 +123,7 @@
                             <br />
                             <span class="destaque"></span>
                             <span class="editoria destaque-cor">DESTAQUES</span>
+                            <br />
                             <br />
                             <ul id="materias-lista" >
                                 <?php $destaquesLista = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaquesLista')) ?>

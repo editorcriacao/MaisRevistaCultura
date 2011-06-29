@@ -49,9 +49,16 @@ p{
     font-family: arial;
     font-size: 14px;
     color: #444444;
+    line-height: 150%;
 }
 
-b{}
+b, strong{
+    font-weight: bold;
+}
+
+em{
+    font-style: italic;
+}
 
 a{
     font-family: arial;
@@ -89,6 +96,17 @@ a:hover{
     color: #fff;
     padding: 3px 5px;
     text-transform: uppercase;
+    z-index: 100;
+}
+
+.editoria-2{
+    font-family: arial;
+    font-size: 12px;
+    font-weight: bold;
+    color: #fff;
+    padding: 8px 11px;
+    text-transform: uppercase;
+    z-index: 100;
 }
 
 .artes-plasticas{background-color: #671e5e;}
@@ -154,7 +172,7 @@ a:hover{
     font-size: 11px;
     color: #444;
     background-color: #eee;
-    width: 640px;
+    width: 606px;
     height: 10px;
     padding: 5px;
 }
@@ -172,7 +190,7 @@ a:hover{
     color: #000000;
     line-height: 140%;
     margin-bottom: 10px;
-    width: 648px;
+    width: 615px;
 }
 
 

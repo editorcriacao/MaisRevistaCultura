@@ -120,7 +120,7 @@ root {
 
 /* Destaque com imagen pequena */
 .destaque-com-img{
-    height: 130px;
+    height: 110px;
 }
 
 .destaque-com-img #materia-img li .img-pequena{
@@ -155,7 +155,7 @@ root {
 
 #linha-divisao {
     border-top: 1px solid #aaa;
-    width: 650px;
+    width: 615px;
     margin-top: 25px;
     *margin-bottom: -2px;
 }
@@ -165,7 +165,7 @@ root {
 }
 
 .imprimir {
-    margin-left: 380px !important;
+    margin-left: 360px !important;
 }
 
 /*-------------------------------------*/
@@ -266,6 +266,21 @@ root {
     position: relative;
     background-image: url(../img/bg-traco.png);
     width: 280px;
+
+    min-height: 190px;
+    padding: 25px 10px;
+
+}
+
+
+#traco{
+    background-image: url(../img/bg-traco.png);
+    display: block;
+    width: 635px;
+    height: 12px;
+    position: relative;
+    top: -11px;
+    z-index: -400;
     min-height: 120px;
     padding: 15px 10px;
 
@@ -474,4 +489,9 @@ root {
 
     font-family: arial;
     font-size: 14px;
+}
+
+/* Land Page */
+#land-page li{
+    display: inline;
 }
