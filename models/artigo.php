@@ -2,5 +2,6 @@
 Class Artigo extends AppModel{
     var $name = 'Artigo';
 
-    var $belongsTo = array('Editoria');
+    var $hasMany   = array('Comentario');
+    var $belongsTo = array('Editoria', 'Colunista');
 }

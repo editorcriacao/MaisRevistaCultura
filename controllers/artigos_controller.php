@@ -14,6 +14,19 @@ Class ArtigosController extends AppController {
     }
 
     /*
+     * Método para ver a materia
+     * @param id
+     *
+     */
+    function ver($id){
+        $artigo = $this->Artigo->find('first', array('conditions'=>array('Artigo.id' => $id)));
+
+        $this->set('title_for_layout', $artigo['Artigo']['titulo']);
+        $this->set('artigo', $artigo);
+        
+    }
+
+    /*
      * Método para aparecer Destaque
      *
      */
@@ -101,14 +114,14 @@ Class ArtigosController extends AppController {
      */
 
     function mostrarTeatroDanca() {
-        $mostrarTeatroDanca = $this->Artigo->query('SELECT Artigo.titulo, Artigo.subTitulo, Artigo.foto
+        $mostrarTeatroDanca = $this->Artigo->query('SELECT Artigo.id, Artigo.titulo, Artigo.subTitulo, Artigo.foto
                                                             FROM  `artigos` AS Artigo
                                                             WHERE Artigo.site = 4
                                                             AND Artigo.editoria_id = 41
                                                             AND Artigo.destaque != 1
                                                             AND Artigo.recente != 1
                                                             ORDER By Artigo.created DESC
-                                                        LIMIT 2, 2');
+                                                        LIMIT 1, 2');
 
         if ($this->params['requested']) {
             return $mostrarTeatroDanca;
@@ -158,14 +171,14 @@ Class ArtigosController extends AppController {
      */
 
     function mostrarCinemaImgDupla() {
-        $mostrarCinemaImgDupla = $this->Artigo->query('SELECT Artigo.id, Artigo.titulo, Artigo.subTitulo, Artigo.foto
+        $mostrarCinemaImgDupla = $this->Artigo->query('SELECT Artigo.id, Artigo.titulo, Artigo.subTitulo, Artigo.imagemMateria
                                                             FROM  `artigos` AS Artigo
                                                             WHERE Artigo.site = 4
                                                             AND Artigo.editoria_id = 40
                                                             AND Artigo.destaque != 1
                                                             AND Artigo.recente != 1
                                                             ORDER By Artigo.created DESC
-                                                        LIMIT 2, 1');
+                                                        LIMIT 1, 1');
 
         if ($this->params['requested']) {
             return $mostrarCinemaImgDupla;
@@ -173,23 +186,23 @@ Class ArtigosController extends AppController {
     }
 
     /*
-     * Método para trazer uma lista
-     * de artigos sobre teatro e artes plasticas
+     * Método para trazer um
+     * artigos sobre musica sem img
      *
      */
 
-    function listaTeatroDanca() {
-        $listaTeatroDanca = $this->Artigo->query('SELECT Artigo.titulo, Artigo.subTitulo
+    function mostrarMusicaSemImg() {
+        $mostrarMusicaSemImg = $this->Artigo->query('SELECT Artigo.id, Artigo.titulo, Artigo.subTitulo
                                                             FROM  `artigos` AS Artigo
                                                             WHERE Artigo.site = 4
-                                                            AND Artigo.editoria_id = 41
+                                                            AND Artigo.editoria_id = 45
                                                             AND Artigo.destaque != 1
                                                             AND Artigo.recente != 1
                                                             ORDER By Artigo.created DESC
-                                                        LIMIT 2, 1');
+                                                        LIMIT 1, 1');
 
         if ($this->params['requested']) {
-            return $listaTeatroDanca;
+            return $mostrarMusicaSemImg;
         }
     }
 
@@ -199,14 +212,14 @@ Class ArtigosController extends AppController {
      * sem imagem
      */
     function mostrarArtesPlasticaSemImg() {
-        $mostrarArtesPlasticaSemImg = $this->Artigo->query('SELECT Artigo.titulo, Artigo.subTitulo
+        $mostrarArtesPlasticaSemImg = $this->Artigo->query('SELECT Artigo.id, Artigo.titulo, Artigo.subTitulo
                                                             FROM  `artigos` AS Artigo
                                                             WHERE Artigo.site = 4
                                                             AND Artigo.editoria_id = 42
                                                             AND Artigo.destaque != 1
                                                             AND Artigo.recente != 1
                                                             ORDER By Artigo.created DESC
-                                                        LIMIT 2, 1');
+                                                        LIMIT 1, 1');
 
         if ($this->params['requested']) {
             return $mostrarArtesPlasticaSemImg;
@@ -232,7 +245,7 @@ Class ArtigosController extends AppController {
      * com imagem
      */
     function mostrarFilosofiaImg() {
-        $mostrarFilosofiaImg = $this->Artigo->query('SELECT Artigo.titulo, Artigo.subTitulo
+        $mostrarFilosofiaImg = $this->Artigo->query('SELECT Artigo.id, Artigo.foto, Artigo.titulo, Artigo.subTitulo
                                                             FROM  `artigos` AS Artigo
                                                             WHERE Artigo.site = 4
                                                             AND Artigo.editoria_id = 46
@@ -252,14 +265,14 @@ Class ArtigosController extends AppController {
      *
      */
      function destaquesLista(){
-         $destaquesLista = $this->Artigo->query('SELECT Artigo.titulo, Artigo.subTitulo
+         $destaquesLista = $this->Artigo->query('SELECT Artigo.id, Artigo.titulo, Artigo.subTitulo
                                                             FROM  `artigos` AS Artigo
                                                             WHERE Artigo.site = 4
-                                                            AND Artigo.editoria_id = 46
+                                                            AND Artigo.editoria_id = 39
                                                             AND Artigo.destaque != 1
                                                             AND Artigo.recente != 1
                                                             ORDER By Artigo.created DESC
-                                                        LIMIT 1, 4');
+                                                        LIMIT 0, 10');
 
         if ($this->params['requested']) {
             return $destaquesLista;
