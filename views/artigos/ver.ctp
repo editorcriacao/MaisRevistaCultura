@@ -1,4 +1,4 @@
-<li id="largura_texto" style="float:left; position: absolute">
+<li id="largura_texto" style="float:left;">
     <div id="nome-secao">
         MATÉRIAS > <span style="font-weight:bold; text-transform: uppercase"><?php echo $artigo['Editoria']['nomeEditoria']?></span>
     </div>
@@ -41,10 +41,7 @@
                 <p>Comentario da pessoa mais aqui...</p>
             </li>
              <div id="linha-divisao" style="margin-top: 8px;"></div>
-            <li>
-                <h5><span><a href="#" style="color: #00547a; font-weight: bold" target="_blank"> Nome da pessoa</a></span> disse:</h5>
-                <p>Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...Comentario da pessoa mais aqui...</p>
-            </li>
+            
         </ul>
 
         <br>

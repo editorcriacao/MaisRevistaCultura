@@ -1,4 +1,4 @@
-<li id="largura_texto" style="height: 30px; float:left; position: absolute;">
+<li id="largura_texto" style="height: 30px; float:left;">
     <br />
     <?php
     switch ($editoria['Editoria']['id']) {
