@@ -142,6 +142,15 @@ root {
     float: left;
 }
 
+#materia-img {
+    margin-right: -5px !important;
+    margin-left: 3px;
+}
+
+#materia-img li {
+    margin-left: -3px;
+}
+
 /* Destaque com imagen pequena */
 
 
@@ -322,11 +331,12 @@ root {
 }
 
 .imprimir, .enviar, .fonte {
-    *margin-top: -5px !important;
+    margin-top: 5px !important;
+    *margin-top: -9px !important;
 }
 
 .compartilhar {
-    *margin-top: 23px !important;
+    *margin-top: 22px !important;
 }
 
 
@@ -495,3 +505,4 @@ root {
 #land-page li{
     display: inline;
 }
+
