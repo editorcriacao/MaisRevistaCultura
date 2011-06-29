@@ -13,6 +13,7 @@
                     <ul>
                         <li>
                             <a href="<?php echo $this->Html->url('/')?>"><?php echo $this->Html->image('logo.png') ?></a>
+
                             <p class="data"><?php
                             $dia = date('d');
                             $mes = date('n');
@@ -63,6 +64,7 @@
                     </ul>
 
                     <ul id="menu">
+
                         <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 39, 'destaques'))?>">Destaques</a>|</li>
                         <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 40, 'cinema'))?>">Cinema</a>|</li>
                         <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 41, 'teatro-danca'))?>">Teatro & Dança</a>|</li>
@@ -70,11 +72,12 @@
                         <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 45, 'musica'))?>">Música</a>|</li>
                         <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 47, 'livros'))?>">Livros</a>|</li>
                         <li><a href="<?php echo $this->Html->url(array('controller'=>'editorias', 'action'=>'ver', 46, 'filosofia'))?>">Filosofia</a></li>
+
                         <li class="espaco"></li>
                         <li class="espaco"></li>
-                        <li class="segundo-menu"><a href="">Cadastro</a>|</li>
+                        <li class="segundo-menu" style="margin-left: 16px !important;"><a href="">Cadastro</a>|</li>
                         <li class="segundo-menu"><a href="">Loja Virtual</a>|</li>
-                        <li class="segundo-menu"><a href="">Contato</a></li>
+                        <li class="segundo-menu" style="padding-right: 0 !important;"><a href="" style="padding-right: 0 !important; margin-right: 0 !important;">Contato</a></li>
                     </ul>
                 </div>
             </div><!-- HEADER -->
@@ -84,20 +87,22 @@
 
                     <?php echo $content_for_layout?>
 
+
                     <li style="width: 300px; margin-left: 690px; margin-top: -7px; float:left;">
+
                         <div id="box-right">
                             <ul id="login-social">
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>
                                 <li>
                                     <ul id="icons">
-                                        <li><a href="" title="Entre em contato"><span class="email"></span></a></li>
+                                        <li><a href="" title="Entre em contato"><span class="email" style="margin-left: 8px;"></span></a></li>
                                         <li><a href="" title="Linkedin"><span class="linkindin"></span></a></li>
                                         <li><a href="" title="Facebook"><span class="facebook"></span></a></li>
                                         <li><a href="" title="Twitter"><span class="twitter"></span></a></li>
                                     </ul>
                                 </li>
                             </ul>
-                            <ul id="search-box">
+                            <ul id="search-box" style="border: 1px solid white;">
                                 <?php echo $this->Form->create('Artigo', array('action'=>'busca'))?>
                                 <li><?php echo $this->Form->input('q', array('label'=>''))?></li>
                                 <li><?php echo $this->Form->submit(' ', array('class'=>'lupa'))?></li>
@@ -117,7 +122,6 @@
                             </div>
                             <br />
                             <span class="destaque"></span>
-                            <br />
                             <span class="editoria destaque-cor">DESTAQUES</span>
                             <br />
                             <br />
@@ -128,10 +132,10 @@
                                 <?php } ?>
                             </ul>
                             <br />
-                            <br />
+                            <br>
                              <span class="destaque"></span>
-                            <br />
-                            <div class="box-tracejado">
+                            
+                            <div class="box-tracejado" style="padding-bottom:-50px !important;">
                                 <span class="editoria padrao">DÊ SUA OPINIÃO</span>
                                 <br />
                                 <br />
@@ -139,14 +143,13 @@
                                 <br />
                                 <br />
                                 <h3>O titulo da materia vem aki?</h3>
-                                <p>+ Votar</p>
-                                <p>+ Ver Resultado</p>
+                                <p style="margin-top:11px;"><a href="">+ Votar</a></p>
+                                <p style="margin-top:5px;"><a href="">+ Ver Resultado</a></p>
                             </div>
                         </div>
+                     
                         <br />
-                        <br />
-                        <br />
-                        <br />
+                        
                         <div class="publicidade-botao">
                             <p>Publicidade</p>
                             <span></span>

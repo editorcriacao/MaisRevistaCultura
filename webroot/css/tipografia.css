@@ -115,7 +115,7 @@ a:hover{
 
 .filosofia{background-color: #003173;}
 
-.cinema{background-color: #d56100}
+.cinema{background-color: #eb6645}
 
 .musica{background-color: #b10f50}
 
@@ -207,8 +207,13 @@ a:hover{
 .faca-login{
     background-color: #f2f2f2;
     border: 1px solid #d0d0d0;
-    padding: 4px;
+    padding: 4px 7px;
     color: #444;
+    margin-top: -4px;
+
+    border-radius:5px;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
 }
 
 .faca-login img{
@@ -344,3 +349,7 @@ label{
     color: #333;
     padding: 3px;
 }
+
+
+/*enquete*/
+
