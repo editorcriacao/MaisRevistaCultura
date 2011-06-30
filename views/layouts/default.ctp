@@ -88,9 +88,7 @@
                     <?php echo $content_for_layout?>
 
 
-
-                    <li style="width: 300px; margin-left: 0px; margin-top: -7px; top: 0px">
-
+                    <li style="width: 300px; margin-left: 20px; margin-top: -5px; float: left;">
                         <div id="box-right">
                             <ul id="login-social">
                                 <li><a href="" class="faca-login">Faça seu login <?php echo $this->Html->image('key-icon.png')?></a></li>

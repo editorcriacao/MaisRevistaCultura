@@ -1,9 +1,9 @@
 
-                  <li style="width: 320px; min-height: 1200px; position: relative; top: -260px;">
+                  <li style="width: 320px; min-height: 1200px; float: left">
 
                        <?php $destaque = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaque'))?>
                          <div class="destaque">
-                            <div class="img"></div>
+                            <div class="img"><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $destaque['Artigo']['id'], Inflector::slug($destaque['Artigo']['titulo'])))?>"><?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/img-materia/' . $destaque['Artigo']['imagemMateria'], array('width'=>318)) ?></a></div>
                             <span class="editoria <?php echo Inflector::slug($destaque['Editoria']['nomeEditoria'])?>"><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $destaque['Artigo']['id'], Inflector::slug($destaque['Artigo']['titulo'])))?>"><?php echo $destaque['Editoria']['nomeEditoria']?></a></span>
                             <br />
                             <br />
@@ -87,7 +87,7 @@
 
 
 
-                    <li  style="width: 320px; min-height: 1200px; margin-left: 12px; position: relative; top: -42px">
+                    <li  style="width: 320px; min-height: 1200px; margin-left: 12px; float: left">
 
                         <?php $destaqueSemFoto = $this->requestAction(array('controller'=>'artigos', 'action'=>'destaqueSemFoto'))?>
 

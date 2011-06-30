@@ -13,7 +13,7 @@ Class EditoriasController extends AppController{
 
         $this->set('title_for_layout', $editoria['Editoria']['nomeEditoria']);
         $this->set('editoria', $editoria);
-        $this->set('artigos', $this->Editoria->Artigo->find('all', array('conditions'=>array('Artigo.editoria_id'=>$id))));
+        $this->set('artigos', $this->Editoria->Artigo->find('all', array('conditions'=>array('Artigo.editoria_id'=>$id), 'order'=>array('Artigo.created'=>'desc'))));
     }
 
 }

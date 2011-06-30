@@ -1,6 +1,6 @@
-<li id="largura_texto" style="float:left;">
+<li style="width: 658px; float: left ">
     <div id="nome-secao">
-        MATÉRIAS > <span style="font-weight:bold; text-transform: uppercase"><?php echo $artigo['Editoria']['nomeEditoria']?></span>
+        MATÉRIAS > <b style="text-transform: uppercase"><?php echo $artigo['Editoria']['nomeEditoria'] ?></b>
     </div>
     <div id="materia">
         <h1><?php echo $artigo['Artigo']['titulo'] ?></h1>
@@ -16,7 +16,7 @@
         <div class="text">
             <p><?php echo $artigo['Artigo']['texto'] ?></p>
         </div>
-        
+
 
         <div id="linha-divisao"></div>
 
@@ -36,29 +36,68 @@
         <br />
 
         <ul id="comentarios">
-            <li>
-                <h5><span><a href="#" style="color: #00547a; font-weight: bold" target="_blank"> Nome da pessoa</a></span> disse:</h5>
-                <p>Comentario da pessoa mais aqui...</p>
-            </li>
-             <div id="linha-divisao" style="margin-top: 8px;"></div>
-            
+            <?php echo $this->Html->image('spinner.gif', array('id' => 'loading')) ?>
         </ul>
 
         <br>
         <div id="caixa-cinza" style="height: 95px; margin-left: 10px; margin-top: -10px;">
-            <h3 style="margin-left:5px;">Colocar a caixa de comentários aqui</h3>
             <br />
             <div id="colunas-formulario-2">
+                <?php echo $this->Form->create('Comentario', array('action' => 'adicionar', 'id' => 'formulario-comentarios')) ?>
+                <?php echo $this->Form->input('comentario', array('label' => '', 'id' => 'comente', 'type' => 'textarea', 'style' => 'width: 580px; height: 50px', 'value' => 'Deixe seu comentário')) ?>
+                <?php echo $this->Form->input('site', array('type' => 'hidden', 'value' => '4')) ?>
+                <?php echo $this->Form->input('artigo_id', array('type' => 'hidden', 'value' => $artigo['Artigo']['id'])) ?>
+                <div id="resto-elementos" style="display: none">
+                    <?php echo $this->Form->input('nome', array('label' => 'Nome Completo', 'size' => '80')) ?>
+                    <?php echo $this->Form->input('email', array('label' => 'Seu E-mail*', 'size' => '80', 'id' => 'email-input')) ?>
+                    <?php echo $this->Form->input('sitepessoal', array('label' => 'Seu Site', 'size' => '80')) ?>
+                    <ul id="regiao" style="margin-left: 1px;">
+                        <li ><?php echo $this->Form->input('cidade', array('label' => 'Cidade')) ?> </li>
+                        <li> <?php echo $this->Form->input('estado', array('label' => ' Estado')) ?></li>
+                    </ul>
+                    <?php echo $this->Form->submit('ENVIAR') ?>
+                </div>
 
             </div>
-
+            <br>
         </div>
-        <br>
-    </div>
 </li>
 <script type="text/javascript">
     $(document).ready(function(){
+        $("#loading").hide();
+        $("#loading").ajaxStart(function(){
+            $(this).show();
+        });
 
+        function comentarios(){
+            $.ajax({
+                url: '<?php echo $this->Html->url(array('controller' => 'comentarios', 'action' => 'verComentarios', $artigo['Artigo']['id'])) ?>',
+                dataType: 'html',
+                success: function(data){
+                    $("#comentarios").html(data);
+                }
+            });
+        }
+
+        comentarios();
+
+
+
+        $("#comente").focus(function(){
+            $("#caixa-cinza").css({height: '400px'}).fadeIn();
+            $("#comente").animate({height: '200px'});
+            $("#resto-elementos").fadeIn();
+        });
+
+        $("#formulario-comentarios").submit(function(){
+
+            var email = $("#email-input").val();
+
+            if(email == ''){
+                alert('O campo E-MAIL é obrigatorio!');
+                return false;
+            }
+        });
         
 
         $("#aumentar").click(function(e){

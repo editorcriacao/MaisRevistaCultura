@@ -143,7 +143,7 @@ Class ArtigosController extends AppController {
                                                             AND Artigo.destaque != 1
                                                             AND Artigo.recente != 1
                                                             ORDER By Artigo.created DESC
-                                                        LIMIT 2, 2');
+                                                        LIMIT 2, 4');
 
         if ($this->params['requested']) {
             return $listarLivros;

@@ -1,4 +1,4 @@
-<li id="largura_texto" style="height: 30px; float:left;">
+<li style="width: 658px; min-height: 1200px; float: left">
     <br />
     <?php
     switch ($editoria['Editoria']['id']) {
@@ -26,15 +26,9 @@
     }
     ?>
     <div id="traco"></div>
-</li>
-
-<ul style="width: 675px; min-height: 1200px; float:left; position: absolute;" id="land-page">
-    <br />
-<br />
-<br />
-<br />
+    <ul style="width: 675px; min-height: 1200px; float:left;" id="land-page">
     <?php foreach ($artigos as $a) {?>
-   
+
         <li style="position: relative">
             <div class="destaque-com-img" style="border-bottom: 0; width: 320px;">
                 <ul id="materia-img" style="border-bottom: 1px solid #999; height: 90px">
@@ -49,6 +43,9 @@
 <?php } ?>
 
 </ul>
+</li>
+
+
 
 
 
