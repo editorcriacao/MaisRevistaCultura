@@ -60,7 +60,7 @@ root {
     background-image: url(../img/icon/twitter-h.png);
 }
 
-.lupa{
+input.lupa{
     background-image: url(../img/lupa_icon.png);
     display: block;
     width: 35px;
@@ -73,10 +73,11 @@ root {
     cursor: pointer;
 }
 
-.lupa, x:-moz-any-link, x:default {
+input.lupa, x:-moz-any-link, x:default {
     top: 11px;
 }
 
-.lupa:hover{
+input.lupa:hover{
     background-image: url(../img/lupa_icon-h.png);
 }
+

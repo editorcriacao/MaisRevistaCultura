@@ -234,19 +234,19 @@ root {
 
 /* Search Box */
 #search-box{
-    margin-top: -20px;
-    margin-top: -25px\9;
+    margin-top: -35px;
+    margin-top: -45px\9;
 }
 
 #search-box, x:-moz-any-link, x:default{
-    margin-top: -25px;
+    margin-top: -45px;
 }
 
 
 #search-box li input[type=text]{
     padding: 3px 5px;
     font-size: 16px;
-    width: 240px;
+    width: 238px;
     height: 24px;
     border: 1px solid #ccc;
     margin-left: -7px !important;
@@ -258,9 +258,6 @@ root {
     -webkit-border-radius:5px;
 }
 
-#search-box li input[type=text], x:-moz-any-link, x:default{
-    width: 238px;
-}
 
 .publicidade-square{
     display: block;
@@ -285,7 +282,7 @@ root {
 #traco{
     background-image: url(../img/bg-traco.png);
     display: block;
-    width: 635px;
+    width: 650px;
     height: 12px;
     position: relative;
     top: -11px;

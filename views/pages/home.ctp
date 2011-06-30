@@ -11,7 +11,7 @@
                             <br />
                         </div>
 
-                        <div class="destaque-com-img">
+                        <div class="destaque-com-img" style="padding-left: 1px;">
                              <?php $mostrarMusica = $this->requestAction(array('controller'=>'artigos', 'action'=>'mostrarMusica'))?>
                             <ul id="materia-img">
                                 <li style="width: 150px; display: inline-block; height: 65px;"><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $mostrarMusica['Artigo']['id'], Inflector::slug($mostrarMusica['Artigo']['titulo'])))?>"><?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/img/fotos_artigos/'.$mostrarMusica['Artigo']['foto'], array('width'=>140))?></a></li>
@@ -44,7 +44,7 @@
                             <br />
                         </div>
 
-                        <div class="destaque-com-img">
+                        <div class="destaque-com-img" style="padding-left: 1px;">
                             <ul id="materia-img">
                                  <?php $mostrarArtesPlasticas = $this->requestAction(array('controller'=>'artigos', 'action'=>'mostrarArtesPlasticas')) ?>
                                 <li style="width: 150px; display: inline-block; height: 65px;"><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $mostrarArtesPlasticas['Artigo']['id'], Inflector::slug($mostrarArtesPlasticas['Artigo']['titulo'])))?>"><?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/img/fotos_artigos/'.$mostrarArtesPlasticas['Artigo']['foto'], array('width'=>140))?></a></li>
@@ -114,17 +114,15 @@
                         </div>
 
 
-                        <div class="destaque-com-img" style="min-height: 120px;">
+                        <div class="destaque-com-img" style="min-height: 110px; padding-left: 1px;">
                             <ul id="materia-img">
                                  <?php $mostrarTeatroDancaComImg = $this->requestAction(array('controller'=>'artigos', 'action'=>'mostrarTeatroDancaComImg'))?>
                                 <li style="width: 150px; display: inline-block; height: 65px;"><a href="<?php echo $this->Html->url(array('controller'=>'artigo', 'action'=>'ver', $mostrarTeatroDancaComImg['Artigo']['id'], Inflector::slug($mostrarTeatroDancaComImg['Artigo']['titulo'])))?>"><?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/img/fotos_artigos/'.$mostrarTeatroDancaComImg['Artigo']['foto'], array('width'=>140))?></a></li>
-                                <li style="width: 165px; display: inline-block; height: 65px;">
+                                <li style="width: 165px; display: inline-block; height: 60px;">
                                     <span class="editoria teatro-danca">Teatro & Dança</span>
                                     <br />
                                     <h3 style="margin-top:10px;"><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $mostrarTeatroDancaComImg['Artigo']['id'], Inflector::slug($mostrarTeatroDancaComImg['Artigo']['titulo'])))?>"><?php echo $mostrarTeatroDancaComImg['Artigo']['titulo']?></a></h3>
-                                    <br />
                                     </li>
-                                <br />
                             </ul>
                         </div>
 
@@ -179,8 +177,8 @@
                             <br />
                         </div>
 
-                        <div class="destaque-com-img">
-                            <ul id="materia-img">
+                        <div class="destaque-com-img" style="padding-left: 1px;" >
+                            <ul id="materia-img" >
                                 <?php $mostrarFilosofiaImg = $this->requestAction(array('controller'=>'artigos', 'action'=>'mostrarFilosofiaImg'))?>
                                 <li style="width: 150px; display: inline-block; height: 110px;"><a href="<?php echo $this->Html->url(array('controller'=>'artigos', 'action'=>'ver', $mostrarFilosofiaImg[0]['Artigo']['id'], Inflector::slug($mostrarFilosofiaImg[0]['Artigo']['titulo'])))?>"><?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/img/fotos_artigos/'.$mostrarFilosofiaImg[0]['Artigo']['foto'], array('width'=>140))?></a></li>
                                 <li style="width: 165px; display: inline-block; height: 110px;">

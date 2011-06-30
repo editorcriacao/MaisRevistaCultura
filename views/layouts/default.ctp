@@ -101,7 +101,7 @@
                                     </ul>
                                 </li>
                             </ul>
-                            <ul id="search-box" style="border: 1px solid white;">
+                            <ul id="search-box" style="border: 1px solid white; padding-left: 7px !important;">
                                 <?php echo $this->Form->create('Artigo', array('action'=>'busca'))?>
                                 <li><?php echo $this->Form->input('q', array('label'=>''))?></li>
                                 <li><?php echo $this->Form->submit(' ', array('class'=>'lupa'))?></li>
