@@ -12,16 +12,16 @@
         <?php echo $this->Html->image('http://www.editorcriacao.com.br/gerenciadorEditor/app/webroot/img/img-materia/' . $artigo['Artigo']['imagemMateria']) ?>
             <h4><?php echo $artigo['Artigo']['legendaFotoMateria'] ?></h4>
         <?php } ?>
-        <br>
-        <div class="text">
+        
+        <div class="text" style="margin-top:20px;">
             <p><?php echo $artigo['Artigo']['texto'] ?></p>
         </div>
 
 
-        <div id="linha-divisao"></div>
+        <div id="linha-divisao" style="margin-bottom:6px;"></div>
 
         <ul id="compartilhar">
-            <li class="compartilhar"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.maisrevistacultura.com.br/artigos/ver/<?php echo $artigo['Artigo']['id'] ?>/<?php echo Inflector::slug($artigo['Artigo']['titulo']) ?>" data-count="horizontal" data-via="editorcriacao" data-lang="pt">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
+            <li class="compartilhar" style="top: 5px; position: relative;"><a href="http://twitter.com/share" class="twitter-share-button" data-url="http://www.maisrevistacultura.com.br/artigos/ver/<?php echo $artigo['Artigo']['id'] ?>/<?php echo Inflector::slug($artigo['Artigo']['titulo']) ?>" data-count="horizontal" data-via="editorcriacao" data-lang="pt">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></li>
             <li class="imprimir"> <a href="#" id="imprimir" title="Imprimir"><?php echo $this->Html->image('icone_imprimir.gif', array('style' => 'margin-bottom:-3px;')) ?></a></li>
             <li class="enviar"> <a href="#" title="Enviar por e-mail"> <?php echo $this->Html->image('icone_enviar.gif', array('style' => 'margin-bottom:-3px;')) ?></a></li>
             <li class="fonte"> FONTE <a href="#" id="aumentar" title="Aumentar fonte"><?php echo $this->Html->image('icone-mais.png', array('style' => 'margin-bottom:-3px;')) ?></a> <a href="" id="diminuir" title="Diminuir fonte"><?php echo $this->Html->image('icone-menos.png', array('style' => 'margin-bottom:-3px;')) ?></a> </li>
